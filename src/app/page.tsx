@@ -1,54 +1,49 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Navbar from "./components/navbar"
+import Homepage from "./home/page"
 import CompanyAbout from "./about/company/page"
 import Services from "./services/page"
 import Contact from "./contact/page"
+import { ChakraProvider } from '@chakra-ui/react';
 
 export default function Home() {
 
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
+    <ChakraProvider>
+    <main>
+      <div>
           <section className="full-height" id="sectionHome"> 
-            <h1>Apple</h1>
+            <div><Homepage /></div>
           </section>
-      
-          <div className={"navbar"}>
+        
+          <div>
             <Navbar />
           </div>
       </div>
       
-      <div className={styles.description}>
+      <div>
           <section className="full-height" id="sectionAbout">
             <CompanyAbout />
           </section>
 
-          <div className={"navbar"}>
-            <Navbar />
-          </div>
       </div>
 
-      <div className={styles.description}>
+      <div>
           <section className="full-height" id="sectionServices">
             <Services />
           </section>
 
-          <div className={"navbar"}>
-            <Navbar />
-          </div>
       </div>
 
-      <div className={styles.description}>
+      <div>
           <section className="full-height" id="sectionContact">
             <Contact />
           </section>
 
-          <div className={"navbar"}>
-            <Navbar />
-          </div>
       </div>
     </main>
+    </ChakraProvider>
   );
   
 }

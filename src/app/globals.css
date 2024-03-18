@@ -111,13 +111,16 @@ a {
 }
 
 .navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.sticky {
   position: fixed;
   top: 0;
-  width: 100%;
+  right:0;
+  margin-top: 10px;
+  margin-right: 10px;
+  z-index: 1000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#sectionHome {
+  text-align: center;
+  font-family: Georgia;
 }
