@@ -1,9 +1,11 @@
 import Image from "next/image";
 import logoImg from "../assets/tanam2.webp";
-import { Divider, Text, Center, Box, Container } from '@chakra-ui/react';
+import { Divider, Text, Center, Box, Container, Flex } from '@chakra-ui/react';
 import womanImg from "../assets/businesswoman.png"
 import styles from "../page.module.css"
 import Testimony from "../components/testimony";
+import googleicon from "../assets/google.png";
+import appstoreicon from "../assets/appstore.png";
 
 export default function Homepage() {
 
@@ -73,7 +75,7 @@ export default function Homepage() {
             />
                 
                 <Box mt={4} style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
-                <Text fontSize='2xl'>Investment Products</Text>
+                <Text fontSize='2xl'>Our Investment Products</Text>
                 
                     <Box mt={0}>
                         <Container mt={2} ml={6} width={100} rounded='md' bg='green.600' color='white'  fontFamily='Helvetica'>Stocks</Container>
@@ -86,13 +88,49 @@ export default function Homepage() {
             </Box>
         </Center>
         <Divider />
-            
-            <Box mt={2}>
+
+          <Flex> 
+            <Box 
+                ml={40}
+                mt={2}
+                >
+
                 <Text fontSize='2xl'>Testimonials</Text>
-                
+
                 <Testimony />
                 
             </Box>
+
+            <Box ml={-40} mt={10}>
+            <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer">
+            <Image 
+            src={googleicon} 
+            alt='/' 
+            width={200}
+            height={200}
+            style={{ marginRight: "20px",
+                     marginLeft: "200px",
+                     marginTop: "10px",
+                     marginBottom: "10px"
+            }}
+            />
+            </a>
+
+            <a href="https://www.apple.com/app-store" target="_blank" rel="noopener noreferrer">
+            <Image 
+            src={appstoreicon} 
+            alt='/' 
+            width={180}
+            height={200}
+            style={{ 
+                     marginLeft: "210px",
+                     marginTop: "10px",
+                     marginBottom: "10px"
+            }}
+            />
+            </a>
+            </Box>
+         </Flex> 
 
         </>
     )

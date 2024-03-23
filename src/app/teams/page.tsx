@@ -40,7 +40,7 @@ export default function Teams() {
                 <Text 
                     fontSize='4xl' 
                     as='b'
-                    fontFamily='Helvetica'
+                    fontFamily='Georgia'
                 >Our Team
                 </Text>
                 
@@ -200,11 +200,19 @@ export default function Teams() {
                 mr={20}
                 mb={3}
             >
-            <Text>
+            <Text 
+            color='#c3c4c3'
+            fontFamily={'Georgia'}
+            >
                 PT Tanam Tumbuh Sejahtera (“Tanam”) berlaku sebagai Agen Penjual Efek Reksa Dana (APERD) yang berizin 
                 dan diawasi oleh Otoritas Jasa Keuangan.</Text>
                 
-            <Text mt={3}>
+            <Text 
+                mt={3}
+                color='#c3c4c3'
+                fontFamily={'Georgia'}
+                textAlign="justify"
+            >
                 Semua Investasi mengandung risiko dan kemungkinan kerugian nilai investasi. 
                 Kinerja pada masa lalu tidak mencerminkan kinerja di masa depan. Kinerja historikal, 
                 expected return dan proyeksi probabilitas disediakan untuk tujuan informasi dan illustrasi.

@@ -36,7 +36,7 @@ export default function Products() {
                 <Text 
                     fontSize='4xl' 
                     as='b'
-                    fontFamily='Helvetica'
+                    fontFamily='Georgia'
                 >Investment Products
                 </Text>
                 
@@ -49,7 +49,7 @@ export default function Products() {
         <Center>
           <Box mt={5}>
            <Center>              
-          <Text>You are just a <b>Click</b> away from being able to invest in:</Text>
+          <Text>You are just a <b>Click</b> away from being able to invest in these products:</Text>
           </Center> 
 
           <Center>
@@ -92,9 +92,11 @@ export default function Products() {
              w='1200px'
              alignItems="flex-start"
              justifyContent="space-between"
-             flexWrap="wrap">
+             flexWrap="wrap"
+             height='50px'
+             >
             
-            <Box mt={5} mr={0} flex="2 1 240px" >
+            <Box mt={5} mr={3} flex="2 1 240px" >
                 <Text 
                     fontWeight="bold" 
                     textDecoration="underline"
@@ -108,13 +110,15 @@ export default function Products() {
                 </Text>
             </Box>
 
-             <Box mt={5} mr={0} ml={7} flex="1 1 250px">
+        <Divider orientation='vertical' color='black' h='300px' />
+        
+             <Box mt={5} mr={3} ml={3} flex="1 1 250px">
                 <Text 
                     fontWeight="bold" 
                     textDecoration="underline"
                     fontSize='2xl'
                     textAlign="center"
-                    >Mutual Fund
+                    >Mutual Funds
                 </Text>
                 
                 <Text textAlign="justify">
@@ -123,7 +127,8 @@ export default function Products() {
                 </Text>
              </Box>
 
-             <Box mt={5} mr={0} ml={7} flex="1 1 250px">
+             <Divider orientation='vertical' color='black' h='300px' />
+             <Box mt={5} mr={3} ml={3} flex="1 1 250px">
                 <Text 
                     fontWeight="bold" 
                     textDecoration="underline"
@@ -139,7 +144,8 @@ export default function Products() {
                 </Text>
              </Box>
               
-             <Box mt={5} mr={-5} ml={7} flex="1 1 250px">
+             <Divider orientation='vertical' color='black' h='300px' />
+             <Box mt={5} mr={0} ml={3} flex="1 1 250px">
              <Text 
                     fontWeight="bold" 
                     textDecoration="underline"
@@ -148,7 +154,7 @@ export default function Products() {
                     >Government Bonds
                 </Text>
               
-              <Text>
+              <Text textAlign="justify">
               Government Securities (SBN) are securities issued by the government to finance the state budget. 
               Through SBN investment, we lend money to the government and in return we will get profits in the 
               form of coupons (bond interest).

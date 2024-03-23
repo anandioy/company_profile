@@ -38,7 +38,7 @@ export default function CompanyAbout () {
                 <Text 
                     fontSize='4xl' 
                     as='b'
-                    fontFamily='Helvetica'
+                    fontFamily='Georgia'
                 >About Us
                 </Text>
             </Box>
@@ -47,13 +47,13 @@ export default function CompanyAbout () {
 
         <Divider />
        
-        <Flex mt={10} 
+        <Flex mt={20} 
              ml={220} 
              mr={500} 
              w='1100px'
              alignItems="flex-start">
             
-            <Box mt={5} mr={0} ml={-20} flex="2" >
+            <Box mt={0} mr={3} ml={-20} flex="2" >
                 <Text 
                     fontWeight="bold" 
                     textDecoration="underline"
@@ -68,12 +68,14 @@ export default function CompanyAbout () {
                 </Text>
             </Box>
 
-             <Box mt={5} mr={0} ml={7} flex="2">
+            <Divider orientation='vertical' color='black' h='300px' />
+
+             <Box mt={0} mr={3} ml={7} flex="2">
                 <Text 
                     fontWeight="bold" 
                     textDecoration="underline"
                     fontSize='2xl'
-                    >The Visionaries:
+                    >The Visionaries
                 </Text>
                 
                 <Text textAlign="justify">
@@ -84,12 +86,14 @@ export default function CompanyAbout () {
                 </Text>
              </Box>
 
-             <Box mt={5} mr={0} ml={7} flex="2">
+             <Divider orientation='vertical' color='black' h='300px' />
+
+             <Box mt={0} mr={3} ml={7} flex="2">
                 <Text 
                     fontWeight="bold" 
                     textDecoration="underline"
                     fontSize='2xl'
-                    >The Early Days:
+                    >The Early Days
                 </Text>
 
                 <Text textAlign="justify">
@@ -98,6 +102,7 @@ export default function CompanyAbout () {
                     the core algorithms and infrastructure that would power <b>Tanam's</b> groundbreaking platform.
                 </Text>
              </Box>
+             <Divider orientation='vertical' color='black' h='300px' />
        
              <Box ml={3} mr={-3}>
               <Image 
