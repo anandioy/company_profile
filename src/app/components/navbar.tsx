@@ -30,8 +30,10 @@ export default function Navbar() {
       color="black"
       alignItems="center"
       justifyContent="flex-end"
-      width="100%"
+      width="23.5%"
       zIndex={999}
+      bg="rgba(255, 255, 255, 0.8)"
+      style={{ paddingTop: '50px' }}
     >
         <nav>
             <a onClick={handleScroll} 
@@ -54,22 +56,22 @@ export default function Navbar() {
             >About Us</a>
             
             <a onClick={handleScroll} 
-            href="#sectionServices" 
+            href="#sectionProducts" 
             style={{ marginRight: '10px',
-            textDecoration: activeLink === 'sectionServices' ? 'underline' : 'none',
+            textDecoration: activeLink === 'sectionProducts' ? 'underline' : 'none',
             }}
-            onMouseOver={() => setActiveLink('sectionServices')}
+            onMouseOver={() => setActiveLink('sectionProducts')}
             onMouseOut={() => setActiveLink('')}
-            >Services</a>
+            >Invest</a>
             
             <a onClick={handleScroll} 
-            href="#sectionContact" 
+            href="#sectionTeams" 
             style={{ marginRight: '10px',
-            textDecoration: activeLink === 'sectionContact' ? 'underline' : 'none',
+            textDecoration: activeLink === 'sectionTeams' ? 'underline' : 'none',
             }}
-            onMouseOver={() => setActiveLink('sectionContact')}
+            onMouseOver={() => setActiveLink('sectionTeams')}
             onMouseOut={() => setActiveLink('')}
-            >Contact Us</a>
+            >Teams</a>
         </nav>
     </Flex>
   );

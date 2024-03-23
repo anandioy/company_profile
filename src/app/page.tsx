@@ -1,10 +1,8 @@
-import Image from "next/image";
-import styles from "./page.module.css";
 import Navbar from "./components/navbar"
 import Homepage from "./home/page"
 import CompanyAbout from "./about/company/page"
-import Services from "./services/page"
-import Contact from "./contact/page"
+import Products from "./products/page"
+import Teams from "./teams/page"
 import { ChakraProvider } from '@chakra-ui/react';
 
 export default function Home() {
@@ -30,15 +28,15 @@ export default function Home() {
       </div>
 
       <div>
-          <section className="full-height" id="sectionServices">
-            <Services />
+          <section className="full-height" id="sectionProducts">
+            <Products />
           </section>
 
       </div>
 
       <div>
-          <section className="full-height" id="sectionContact">
-            <Contact />
+          <section className="full-height" id="sectionTeams">
+            <Teams />
           </section>
 
       </div>
