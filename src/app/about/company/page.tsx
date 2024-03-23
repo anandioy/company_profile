@@ -102,7 +102,7 @@ export default function CompanyAbout () {
                 <Text textAlign="justify">
                     In its infancy, <b>Tanam</b> operated out of a small room-turned-office, fueled by sheer determination 
                     and a shared vision. Sarah, Axel, and Agung worked tirelessly, burning the midnight oil to develop 
-                    the core algorithms and infrastructure that would power <b>Tanam's</b> groundbreaking platform.
+                    the core algorithms and infrastructure that would power <b>Tanam&apos;s</b> groundbreaking platform.
                 </Text>
              </Box>
              <Divider orientation='vertical' color='black' h='300px' />

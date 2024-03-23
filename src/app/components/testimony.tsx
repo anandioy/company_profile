@@ -32,7 +32,7 @@ export default function Testimony() {
                   mr={4}
                   ml={4}
                   mt={2}
-                ><b>Grace Kelly, 36 :</b> "I've been investing with Tanam for over two years now, and the returns have been nothing short of phenomenal. "</Text>
+                ><b>Grace Kelly, 36 :</b> &quot; I&apos;ve been investing with Tanam for over two years now, and the returns have been nothing short of phenomenal. &quot;</Text>
             </Box>
 
             <Box
@@ -51,7 +51,7 @@ export default function Testimony() {
                 mr={4}
                 ml={4}
                 mt={2}
-            ><b>Thomas Ford, 40 :</b> "Navigating the complexities of the investment world can be daunting, but thanks to Tanam, it's become a seamless journey. "</Text>
+            ><b>Thomas Ford, 40 :</b> &quot; Navigating the complexities of the investment world can be daunting, but thanks to Tanam, it&apos;s become a seamless journey. &quot;</Text>
             </Box>
 
             <Box
@@ -70,7 +70,7 @@ export default function Testimony() {
                   mr={4}
                   ml={4}
                   mt={2}
-                ><b>Minka Jones, 25 :</b> "It's not just about the numbers though; their intuitive interface and personalized insights make managing my portfolio a breeze."</Text>
+                ><b>Minka Jones, 25 :</b> &quot; It&apos;s not just about the numbers though; their intuitive interface and personalized insights make managing my portfolio a breeze.&quot;</Text>
             </Box>
                 
             </div>

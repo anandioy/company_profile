@@ -124,7 +124,7 @@ export default function Products() {
                 </Text>
                 
                 <Text textAlign="justify">
-                <b>Tanam </b>allows you to invest in mutual funds, also known as "Reksa Dana," which are investment vehicles that pool money from various investors to invest 
+                <b>Tanam </b>allows you to invest in mutual funds, also known as &quot;Reksa Dana,&quot; which are investment vehicles that pool money from various investors to invest 
                 in a diversified portfolio of securities such as stocks, bonds, money market instruments, or a combination of these assets.
                 </Text>
              </Box>
