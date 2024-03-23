@@ -58,6 +58,7 @@ export default function CompanyAbout () {
                     fontWeight="bold" 
                     textDecoration="underline"
                     fontSize='2xl'
+                    color='#028a0f'
                     >The Birth of Tanam
                 </Text>
                     
@@ -75,6 +76,7 @@ export default function CompanyAbout () {
                     fontWeight="bold" 
                     textDecoration="underline"
                     fontSize='2xl'
+                    color='#028a0f'
                     >The Visionaries
                 </Text>
                 
@@ -93,6 +95,7 @@ export default function CompanyAbout () {
                     fontWeight="bold" 
                     textDecoration="underline"
                     fontSize='2xl'
+                    color='#028a0f'
                     >The Early Days
                 </Text>
 

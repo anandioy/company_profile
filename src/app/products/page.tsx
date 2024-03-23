@@ -102,6 +102,7 @@ export default function Products() {
                     textDecoration="underline"
                     fontSize='2xl'
                     textAlign="center"
+                    color='#028a0f'
                     >Stocks
                 </Text>
                     
@@ -118,6 +119,7 @@ export default function Products() {
                     textDecoration="underline"
                     fontSize='2xl'
                     textAlign="center"
+                    color='#028a0f'
                     >Mutual Funds
                 </Text>
                 
@@ -134,6 +136,7 @@ export default function Products() {
                     textDecoration="underline"
                     fontSize='2xl'
                     textAlign="center"
+                    color='#028a0f'
                     >Stable Earn
                 </Text>
                 
@@ -151,6 +154,7 @@ export default function Products() {
                     textDecoration="underline"
                     fontSize='2xl'
                     textAlign="center"
+                    color='#028a0f'
                     >Government Bonds
                 </Text>
               
