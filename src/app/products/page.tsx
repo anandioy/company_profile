@@ -1,6 +1,8 @@
-import { Box, Text, Divider } from "@chakra-ui/react";
+import { Box, Text, Divider, Center, Flex } from "@chakra-ui/react";
 import Image from "next/image"
 import logoImg from "../assets/tanam2.webp";
+import phoneicon from "../assets/phoneicon.png";
+import arrowicon from "../assets/arrowdown.png"
 
 export default function Products() {
 
@@ -37,11 +39,124 @@ export default function Products() {
                     fontFamily='Helvetica'
                 >Investment Products
                 </Text>
+                
             </Box>
 
         </div>
 
         <Divider />
+    
+        <Center>
+          <Box mt={5}>
+           <Center>              
+          <Text>You are just a <b>Click</b> away from being able to invest in:</Text>
+          </Center> 
+
+          <Center>
+            <Image 
+        
+                src={phoneicon} 
+                alt='/' 
+                width={100}
+                height={100}
+                style={{ marginRight: "20px",
+                         marginLeft: "20px",
+                         marginTop: "20px",
+                         marginBottom: "10px",
+                }}
+            />
+            </Center>
+
+            <Center>
+            <Image 
+        
+              src={arrowicon} 
+              alt='/' 
+              width={100}
+              height={100}
+              style={{ marginRight: "20px",
+                       marginLeft: "20px",
+                       marginTop: "5px",
+                       marginBottom: "10px",
+                  }}
+            />
+            </Center>
+            </Box>
+        
+        </Center>
+
+        <Center>
+        <Flex mt={0} 
+             ml={150} 
+             mr={150} 
+             w='1200px'
+             alignItems="flex-start"
+             justifyContent="space-between"
+             flexWrap="wrap">
+            
+            <Box mt={5} mr={0} flex="2 1 240px" >
+                <Text 
+                    fontWeight="bold" 
+                    textDecoration="underline"
+                    fontSize='2xl'
+                    textAlign="center"
+                    >Stocks
+                </Text>
+                    
+                <Text textAlign="justify">
+                With <b>Tanam</b>, you can buy the stocks of Indonesian publicly traded companies listed on the Indonesia Stock Exchange (IDX)
+                </Text>
+            </Box>
+
+             <Box mt={5} mr={0} ml={7} flex="1 1 250px">
+                <Text 
+                    fontWeight="bold" 
+                    textDecoration="underline"
+                    fontSize='2xl'
+                    textAlign="center"
+                    >Mutual Fund
+                </Text>
+                
+                <Text textAlign="justify">
+                <b>Tanam </b>allows you to invest in mutual funds, also known as "Reksa Dana," which are investment vehicles that pool money from various investors to invest 
+                in a diversified portfolio of securities such as stocks, bonds, money market instruments, or a combination of these assets.
+                </Text>
+             </Box>
+
+             <Box mt={5} mr={0} ml={7} flex="1 1 250px">
+                <Text 
+                    fontWeight="bold" 
+                    textDecoration="underline"
+                    fontSize='2xl'
+                    textAlign="center"
+                    >Stable Earn
+                </Text>
+                
+                <Text textAlign="justify">
+                  <b>Tanam</b> offers a short-term investment option characterized by a reliably stable return. Backed by assets 
+                  like short-term government bonds that carry a 100% state guarantee, this product is ideal for 
+                  individuals seeking lower risk exposure
+                </Text>
+             </Box>
+              
+             <Box mt={5} mr={-5} ml={7} flex="1 1 250px">
+             <Text 
+                    fontWeight="bold" 
+                    textDecoration="underline"
+                    fontSize='2xl'
+                    textAlign="center"
+                    >Government Bonds
+                </Text>
+              
+              <Text>
+              Government Securities (SBN) are securities issued by the government to finance the state budget. 
+              Through SBN investment, we lend money to the government and in return we will get profits in the 
+              form of coupons (bond interest).
+              </Text>
+             </Box>
+             
+             </Flex>
+        </Center>
        </>
     )
 }

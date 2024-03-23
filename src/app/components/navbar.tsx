@@ -71,7 +71,7 @@ export default function Navbar() {
             }}
             onMouseOver={() => setActiveLink('sectionTeams')}
             onMouseOut={() => setActiveLink('')}
-            >Teams</a>
+            >Our Team</a>
         </nav>
     </Flex>
   );

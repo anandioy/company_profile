@@ -62,9 +62,9 @@ export default function CompanyAbout () {
                 </Text>
                     
                 <Text textAlign="justify">
-                    In the bustling city of Jakarta, amidst the flurry of innovation and entrepreneurial spirit, 
-                    <b>Tanam</b> was born. Founded in 2019 by a group of ambitious young finance graduates and tech enthusiasts, 
-                    Tanam emerged as a visionary project aiming to revolutionize the way people interacted with investments.
+                    In the bustling city of Jakarta, amidst the flurry of innovation and entrepreneurial spirit,  
+                    <b> Tanam</b> was born. Founded in 2019 by a group of ambitious young finance graduates and tech enthusiasts, 
+                    <b> Tanam</b> emerged as a visionary project aiming to revolutionize the way people interacted with investments.
                 </Text>
             </Box>
 
@@ -88,13 +88,14 @@ export default function CompanyAbout () {
                 <Text 
                     fontWeight="bold" 
                     textDecoration="underline"
-                    fontSize='2xl'>The Early Days:
+                    fontSize='2xl'
+                    >The Early Days:
                 </Text>
 
                 <Text textAlign="justify">
-                    In its infancy, Tanam operated out of a small room-turned-office, fueled by sheer determination 
+                    In its infancy, <b>Tanam</b> operated out of a small room-turned-office, fueled by sheer determination 
                     and a shared vision. Sarah, Axel, and Agung worked tirelessly, burning the midnight oil to develop 
-                    the core algorithms and infrastructure that would power Tanam's groundbreaking platform.
+                    the core algorithms and infrastructure that would power <b>Tanam's</b> groundbreaking platform.
                 </Text>
              </Box>
        
