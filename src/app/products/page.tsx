@@ -8,7 +8,7 @@ export default function Products() {
 
     return (
         <>
-         <div style={{ display: "flex", alignItems: "center" }}>
+         <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
             <Image 
                 src={logoImg} 
                 alt='/' 
@@ -16,7 +16,6 @@ export default function Products() {
                 height={100}
                 style={{ 
                         marginRight: "20px",
-                        marginLeft: "200px",
                         marginTop: "10px",
                         marginBottom: "10px"
                         }}
@@ -24,22 +23,21 @@ export default function Products() {
 
             <Box 
              height="50%"
-             ml={-5}
-             mb={6} 
-             w='500px' 
+             w={['90%', '300px']}
+             mb={6}  
              p={4} 
              color='black'
              rounded='md'
+             textAlign="center"
              style={{ paddingTop: '50px' }}
              >
              
                 <Text 
-                    fontSize='4xl' 
+                    fontSize={['3xl', '4xl']}
                     as='b'
                     fontFamily='Georgia'
                 >Investment Products
                 </Text>
-                
             </Box>
 
         </div>
@@ -47,7 +45,7 @@ export default function Products() {
         <Divider />
     
         <Center>
-          <Box mt={5}>
+          <Box mt={{ base: 5, md: 0 }}>
            <Center>              
           <Text>You are just a <b>Click</b> away from being able to invest in these products:</Text>
           </Center> 
@@ -86,14 +84,14 @@ export default function Products() {
         </Center>
 
         <Center>
-        <Flex mt={0} 
-             ml={150} 
-             mr={150} 
-             w='1200px'
-             alignItems="flex-start"
-             justifyContent="space-between"
-             flexWrap="wrap"
-             height='50px'
+        <Flex mt={0}
+          ml={{ base: 0, md: 150 }}
+          mr={{ base: 0, md: 150 }}
+          w={{ base: "100%", md: "1200px" }}
+          alignItems="flex-start"
+          justifyContent="space-between"
+          flexWrap="wrap"
+          height={{ base: "auto", md: "50px" }}
              >
             
             <Box mt={5} mr={3} flex="2 1 240px" >

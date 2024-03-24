@@ -12,7 +12,7 @@ export default function Teams() {
  
     return (
         <>
-         <div style={{ display: "flex", alignItems: "center" }}>
+         <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
             <Image 
                 src={logoImg} 
                 alt='/' 
@@ -20,7 +20,6 @@ export default function Teams() {
                 height={100}
                 style={{ 
                         marginRight: "20px",
-                        marginLeft: "200px",
                         marginTop: "10px",
                         marginBottom: "10px"
                         }}
@@ -28,22 +27,21 @@ export default function Teams() {
 
             <Box 
              height="50%"
-             ml={-5}
-             mb={6} 
-             w='500px' 
+             w={['90%', '300px']}
+             mb={6}  
              p={4} 
              color='black'
              rounded='md'
+             textAlign="center"
              style={{ paddingTop: '50px' }}
              >
              
                 <Text 
-                    fontSize='4xl' 
+                    fontSize={['3xl', '4xl']}
                     as='b'
                     fontFamily='Georgia'
                 >Our Team
                 </Text>
-                
             </Box>
 
         </div>
@@ -51,13 +49,12 @@ export default function Teams() {
         <Divider />
 
         <Center>
-        <Flex mt={0} 
-             ml={150} 
-             mr={150} 
-             w='1200px'
-             alignItems="flex-start"
-             justifyContent="space-between"
-             flexWrap="wrap">
+        <Flex mt={5} 
+                    mx={[4, 0]} 
+                    w={['100%', '90%', '80%', '75%']}
+                    alignItems="flex-start"
+                    justifyContent="space-between"
+                    flexWrap="wrap">
             
             <Box mt={5} mr={0} flex="2 1 230px" >
                 
@@ -117,9 +114,9 @@ export default function Teams() {
                 />
              </Box>
               
-             <Box mt={5} mr={0} ml={7} flex="1 1 200px">
+             <Box mt={5} mr={0} ml={7} flex="1 1 230px" textAlign={"center"} >
                 <Center>
-                    <Text textAlign={"center"} 
+                    <Text 
                         as="b">
                         Bryan Bennett, Chief Financial Officer (CFO)
                     </Text>
@@ -136,59 +133,6 @@ export default function Teams() {
              </Flex>
         </Center>
 
-        <Center>
-            <Flex mt={0} 
-             ml={130} 
-             mr={150} 
-             mb={20}
-             w='1200px'
-             alignItems="flex-start"
-             justifyContent="space-between"
-             flexWrap="wrap">
-            
-                <Box mt={7} mr={0} ml={40} flex="1 1 200px" > 
-                
-                <Center>
-                    <Text 
-                        as="b"
-                        textAlign={"center"}>
-                        Jesselyn Sutanto, Chief Marketing Officer (CMO)
-                    </Text>
-                </Center>
-             
-                <Avatar mt={3} ml={130}
-                src={jessImg.src ?? ''} 
-               
-                width={250}
-                height={350}
-                size="xl"
-                />
-               
-            </Box>
-
-             <Box mt={7} mr={20} ml={0} >
-                <Center>
-                    <Text textAlign={"center"} 
-                        as="b"
-                       >
-                        Max Wibawa, Chief Compliance Officer (CCO)
-                    </Text>
-                    
-                </Center>
-                
-                <Avatar 
-                mt={3}
-                ml={10}
-                src={maxImg.src ?? ''} 
-               
-                width={250}
-                height={350}
-                size="xl"
-                />
-             </Box>
-
-             </Flex>
-        </Center>
 
         <Divider/>
 

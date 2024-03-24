@@ -6,6 +6,7 @@ import styles from "../page.module.css"
 import Testimony from "../components/testimony";
 import googleicon from "../assets/google.png";
 import appstoreicon from "../assets/appstore.png";
+import { useBreakpointValue } from '@chakra-ui/react';
 
 export default function Homepage() {
 
@@ -42,11 +43,11 @@ export default function Homepage() {
 
         <Divider />
 
-        <Center>
-            <Box>
+        <Center flexDirection={{ base: 'column', md: 'row' }}>
+            <Box textAlign={{ base: 'center', md: 'left' }} mt={{ base: '4', md: '0' }}>
                 <Text 
                     mt = {0}
-                    fontSize='5xl'
+                    fontSize={{ base: '3xl', md: '5xl' }}
                     maxWidth='400px'
                     className={styles.fadeIn}
                     >
@@ -66,16 +67,12 @@ export default function Homepage() {
                 alt='/' 
                 width={200}
                 height={200}
-                style={{ marginRight: "20px",
-                         marginLeft: "10px",
-                         marginTop: "30px",
-                         marginBottom: "10px",
-                }}
+                style={{ margin: "10px" }}
                 className={styles.image}
             />
                 
                 <Box mt={4} style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
-                <Text fontSize='2xl'>Our Investment Products</Text>
+                <Text fontSize={{ base: 'xl', md: '2xl' }}>Our Investment Products</Text>
                 
                     <Box mt={0}>
                         <Container mt={2} ml={6} width={100} rounded='md' bg='green.600' color='white'  fontFamily='Helvetica'>Stocks</Container>
@@ -89,27 +86,25 @@ export default function Homepage() {
         </Center>
         <Divider />
 
-          <Flex> 
+          <Flex flexDirection={{ base: 'column', md: 'row' }}> 
             <Box 
-                ml={40}
-                mt={2}
+                textAlign="center" mt={10} ml={{ base: '0', md: '30' }}
                 >
 
-                <Text fontSize='2xl'>Testimonials</Text>
+                <Text fontSize={{ base: 'xl', md: '2xl' }}>Testimonials</Text>
 
                 <Testimony />
                 
             </Box>
 
-            <Box ml={-40} mt={10}>
+            <Box textAlign="center" mt={10}>
             <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer">
             <Image 
             src={googleicon} 
             alt='/' 
             width={200}
             height={200}
-            style={{ marginRight: "20px",
-                     marginLeft: "200px",
+            style={{ marginRight: "200px",
                      marginTop: "10px",
                      marginBottom: "10px"
             }}
@@ -123,7 +118,7 @@ export default function Homepage() {
             width={180}
             height={200}
             style={{ 
-                     marginLeft: "210px",
+                     
                      marginTop: "10px",
                      marginBottom: "10px"
             }}

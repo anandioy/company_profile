@@ -10,7 +10,7 @@ export default function CompanyAbout () {
 
     return (
         <>
-        <div style={{ display: "flex", alignItems: "center" }}>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
             <Image 
                 src={logoImg} 
                 alt='/' 
@@ -18,7 +18,6 @@ export default function CompanyAbout () {
                 height={100}
                 style={{ 
                         marginRight: "20px",
-                        marginLeft: "200px",
                         marginTop: "10px",
                         marginBottom: "10px"
                         }}
@@ -26,17 +25,17 @@ export default function CompanyAbout () {
 
             <Box 
              height="50%"
-             ml={-5}
-             mb={6} 
-             w='300px' 
+             w={['90%', '300px']}
+             mb={6}  
              p={4} 
              color='black'
              rounded='md'
+             textAlign="center"
              style={{ paddingTop: '50px' }}
              >
              
                 <Text 
-                    fontSize='4xl' 
+                    fontSize={['3xl', '4xl']}
                     as='b'
                     fontFamily='Georgia'
                 >About Us
@@ -47,17 +46,19 @@ export default function CompanyAbout () {
 
         <Divider />
        
-        <Flex mt={20} 
-             ml={220} 
-             mr={500} 
-             w='1100px'
-             alignItems="flex-start">
+        <Flex 
+             direction={['column', 'row']}
+             mt={20} 
+             justifyContent="center"
+             alignItems="flex-start"
+             flexWrap="wrap"
+             >
             
-            <Box mt={0} mr={3} ml={-20} flex="2" >
+            <Box mt={0} mr={3} mb={6} flex={['none', 2]} >
                 <Text 
                     fontWeight="bold" 
                     textDecoration="underline"
-                    fontSize='2xl'
+                    fontSize={['xl', '2xl']}
                     color='#028a0f'
                     >The Birth of Tanam
                 </Text>
@@ -69,13 +70,13 @@ export default function CompanyAbout () {
                 </Text>
             </Box>
 
-            <Divider orientation='vertical' color='black' h='300px' />
+            <Divider orientation='vertical' color='black' h={['1px', '300px']} />
 
-             <Box mt={0} mr={3} ml={7} flex="2">
+             <Box mt={0} mr={3} mb={6} flex={['none', 2]}>
                 <Text 
                     fontWeight="bold" 
                     textDecoration="underline"
-                    fontSize='2xl'
+                    fontSize={['xl', '2xl']}
                     color='#028a0f'
                     >The Visionaries
                 </Text>
@@ -88,13 +89,13 @@ export default function CompanyAbout () {
                 </Text>
              </Box>
 
-             <Divider orientation='vertical' color='black' h='300px' />
+             <Divider orientation='vertical' color='black' h={['1px', '300px']} />
 
-             <Box mt={0} mr={3} ml={7} flex="2">
+             <Box mt={0} mr={3} mb={6} flex={['none', 2]}>
                 <Text 
                     fontWeight="bold" 
                     textDecoration="underline"
-                    fontSize='2xl'
+                    fontSize={['xl', '2xl']}
                     color='#028a0f'
                     >The Early Days
                 </Text>
@@ -107,7 +108,7 @@ export default function CompanyAbout () {
              </Box>
              <Divider orientation='vertical' color='black' h='300px' />
        
-             <Box ml={3} mr={-3}>
+             <Box ml={3} mr={-3} flex={['none', 2]}>
               <Image 
                 src={homeofficeImg} 
                 alt='/' 

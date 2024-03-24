@@ -17,8 +17,8 @@ export default function Testimony() {
                 }}>
             
             <Box
-            width={270}
-            height={270}
+            width={{base: "90%", md: "50%", lg: "30%"}}
+            mb={4}
             textAlign="justify"
             fontFamily='Helvetica'
             >
@@ -28,7 +28,7 @@ export default function Testimony() {
                 style={{ marginRight: "20px",
                          marginLeft: "80px"
             }} />
-            <Text fontSize="sm"
+            <Text fontSize={{ base: "sm", md: "md"}} 
                   mr={4}
                   ml={4}
                   mt={2}
@@ -36,8 +36,8 @@ export default function Testimony() {
             </Box>
 
             <Box
-            width={270}
-            height={270}
+            width={{base: "90%", md: "50%", lg: "30%"}}
+            mb={4}
             textAlign="justify"
             fontFamily='Helvetica'
             >
@@ -47,7 +47,8 @@ export default function Testimony() {
                 style={{ marginRight: "20px",
                          marginLeft: "80px"
             }} />
-            <Text fontSize="sm"
+            <Text fontSize={{ base: "sm", md: "md"}}
+            textAlign="center"
                 mr={4}
                 ml={4}
                 mt={2}
@@ -55,8 +56,9 @@ export default function Testimony() {
             </Box>
 
             <Box
-            width={270}
-            height={270}
+            width={{base: "90%", md: "50%", lg: "30%"}}
+            mr={0}
+            mb={4}
             textAlign="justify"
             fontFamily='Helvetica'
             >
@@ -66,7 +68,7 @@ export default function Testimony() {
                 style={{ marginRight: "20px",
                          marginLeft: "80px"
             }} />
-            <Text fontSize="sm"
+            <Text fontSize={{ base: "sm", md: "md"}}
                   mr={4}
                   ml={4}
                   mt={2}
