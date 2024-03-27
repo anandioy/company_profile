@@ -50,7 +50,7 @@ export default function Testimony() {
                          marginLeft: "90px"
             }} />
             <Text fontSize={{ base: "sm", md: "md"}}
-            textAlign="center"
+            textAlign="justify"
                 mr={4}
                 ml={4}
                 mt={2}
