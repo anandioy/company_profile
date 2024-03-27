@@ -54,7 +54,10 @@ export default function Teams() {
                     w={['100%', '90%', '80%', '75%']}
                     alignItems="flex-start"
                     justifyContent="space-between"
-                    flexWrap="wrap">
+                    flexWrap="wrap"
+                    mb={3}
+                    >
+              
             
             <Box mt={5} mr={0} flex="2 1 230px" >
                 
@@ -114,7 +117,7 @@ export default function Teams() {
                 />
              </Box>
               
-             <Box mt={5} mr={0} ml={7} flex="1 1 230px" textAlign={"center"} >
+             <Box mt={5} mr={0} ml={5} flex="1 1 230px" textAlign={"center"} >
                 <Center>
                     <Text 
                         as="b">
@@ -124,7 +127,8 @@ export default function Teams() {
                 
                 <Avatar
                 src={bryanImg.src ?? ''} 
-               
+                mt={3}
+                ml={0}
                 width={250}
                 height={350}
                 size="xl"

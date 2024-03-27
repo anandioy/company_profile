@@ -49,6 +49,8 @@ export default function CompanyAbout () {
         <Flex 
              direction={['column', 'row']}
              mt={20} 
+             ml={5}
+             mr={5}
              justifyContent="center"
              alignItems="flex-start"
              flexWrap="wrap"
@@ -70,9 +72,9 @@ export default function CompanyAbout () {
                 </Text>
             </Box>
 
-            <Divider orientation='vertical' color='black' h={['1px', '300px']} />
+            <Divider orientation='vertical' color='black' h={['1px', '500px']} />
 
-             <Box mt={0} mr={3} mb={6} flex={['none', 2]}>
+             <Box mt={0} mr={3} mb={6} ml={3} flex={['none', 2]}>
                 <Text 
                     fontWeight="bold" 
                     textDecoration="underline"
@@ -89,9 +91,9 @@ export default function CompanyAbout () {
                 </Text>
              </Box>
 
-             <Divider orientation='vertical' color='black' h={['1px', '300px']} />
+             <Divider orientation='vertical' color='black' h={['1px', '500px']} />
 
-             <Box mt={0} mr={3} mb={6} flex={['none', 2]}>
+             <Box mt={0} mr={3} mb={6} ml={3} flex={['none', 2]}>
                 <Text 
                     fontWeight="bold" 
                     textDecoration="underline"
@@ -106,7 +108,7 @@ export default function CompanyAbout () {
                     the core algorithms and infrastructure that would power <b>Tanam&apos;s</b> groundbreaking platform.
                 </Text>
              </Box>
-             <Divider orientation='vertical' color='black' h='300px' />
+             <Divider orientation='vertical' color='black' h='500px' />
        
              <Box ml={3} mr={-3} flex={['none', 2]}>
               <Image 

@@ -13,12 +13,14 @@ export default function Testimony() {
             <div style={{ 
                 display: "flex", 
                 alignItems: "center",
-                marginTop: "10px"
+                marginTop: "5px",
+                marginLeft: "100px"
                 }}>
             
             <Box
-            width={{base: "90%", md: "50%", lg: "30%"}}
-            mb={4}
+            ml={0}
+            width={{base: "25%", md: "30%", lg: '300px'}}
+            mb={9}
             textAlign="justify"
             fontFamily='Helvetica'
             >
@@ -36,7 +38,7 @@ export default function Testimony() {
             </Box>
 
             <Box
-            width={{base: "90%", md: "50%", lg: "30%"}}
+            width={{base: "25%", md: "30%", lg: '300px'}}
             mb={4}
             textAlign="justify"
             fontFamily='Helvetica'
@@ -45,7 +47,7 @@ export default function Testimony() {
                 
                 size="xl"
                 style={{ marginRight: "20px",
-                         marginLeft: "80px"
+                         marginLeft: "90px"
             }} />
             <Text fontSize={{ base: "sm", md: "md"}}
             textAlign="center"
@@ -56,7 +58,7 @@ export default function Testimony() {
             </Box>
 
             <Box
-            width={{base: "90%", md: "50%", lg: "30%"}}
+            width={{base: "25%", md: "30%", lg: '300px'}}
             mr={0}
             mb={4}
             textAlign="justify"

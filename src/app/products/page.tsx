@@ -45,7 +45,8 @@ export default function Products() {
         <Divider />
     
         <Center>
-          <Box mt={{ base: 5, md: 0 }}>
+          <Box mt={{ base: 5, md: 0 }}
+          ml={3}>
            <Center>              
           <Text>You are just a <b>Click</b> away from being able to invest in these products:</Text>
           </Center> 
@@ -94,7 +95,7 @@ export default function Products() {
           height={{ base: "auto", md: "50px" }}
              >
             
-            <Box mt={5} mr={3} flex="2 1 240px" >
+            <Box mt={5} mr={3} ml={3} flex="2 1 240px" >
                 <Text 
                     fontWeight="bold" 
                     textDecoration="underline"
@@ -146,7 +147,7 @@ export default function Products() {
              </Box>
               
              <Divider orientation='vertical' color='black' h='300px' />
-             <Box mt={5} mr={0} ml={3} flex="1 1 250px">
+             <Box mt={5} ml={3} mr={3} flex="1 1 250px">
              <Text 
                     fontWeight="bold" 
                     textDecoration="underline"

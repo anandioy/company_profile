@@ -25,12 +25,12 @@ export default function Navbar() {
     <Flex
       position="fixed"
       top={0}
-      right={0}
+      right={2}
       p={4}
       color="black"
       alignItems="center"
       justifyContent="flex-end"
-      width="23.5%"
+      width="27%"
       zIndex={999}
       bg="rgba(255, 255, 255, 0.8)"
       style={{ paddingTop: '50px' }}

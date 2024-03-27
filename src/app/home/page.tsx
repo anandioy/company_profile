@@ -13,14 +13,15 @@ export default function Homepage() {
 
     return (
         <>
-        <div style={{ display: "flex", alignItems: "center" }}>
+        <Flex style={{ display: "flex", alignItems: "center" }}
+              ml={{ base: '50px', md: '100px', lg: '150px' }}
+        >
             <Image 
             src={logoImg} 
             alt='/' 
             width={100}
             height={100}
             style={{ marginRight: "20px",
-                     marginLeft: "200px",
                      marginTop: "10px",
                      marginBottom: "10px"
             }}
@@ -39,7 +40,7 @@ export default function Homepage() {
             >
                 Cultivating Growth, Nurturing Futures
             </Text>
-        </div>
+        </Flex>
 
         <Divider />
 
@@ -88,10 +89,13 @@ export default function Homepage() {
 
           <Flex flexDirection={{ base: 'column', md: 'row' }}> 
             <Box 
-                textAlign="center" mt={10} ml={{ base: '0', md: '30' }}
+                textAlign="center" mt={10} ml={{ base: '0', md: '10' }}
                 >
 
-                <Text fontSize={{ base: 'xl', md: '2xl' }}>Testimonials</Text>
+                <Text 
+                    mt={-4}
+                    ml={7}
+                    fontSize={{ base: 'xl', md: '2xl' }}>Testimonials</Text>
 
                 <Testimony />
                 
@@ -104,7 +108,8 @@ export default function Homepage() {
             alt='/' 
             width={200}
             height={200}
-            style={{ marginRight: "200px",
+            style={{ marginLeft: "-7px",
+                     marginRight: "200px",
                      marginTop: "10px",
                      marginBottom: "10px"
             }}
